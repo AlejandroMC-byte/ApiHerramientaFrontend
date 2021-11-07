@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="js/misFunciones.js"></script>
+    <title>Herramietas</title>
+</head>
+
+<body>
+    <!-- CATEGORIAS   -->
+    <h1> Categorias</h1>
+    <div id="resultado1"></div>
+
+    <button onclick="traerInformacionCategorias()" > Consultar Categorias</button>
+
+    <div>
+         <input type="text" id="Cname" placeholder="name">
+         <input type="text" id="Cdescription" placeholder="description">
+    </div>
+
+    <button onclick="guardarInformacionCategorias()">Guardar Categorias</button>
+
+    <!-- TOOLS   -->
+
+    <h1> Tools</h1>
+    <div id="resultado2"></div>
+
+    <button onclick="traerInformacionTools()" > Consultar Tools</button>
+
+    <div>
+         <input type="text" id="Tname" placeholder="name">
+         <input type="text" id="Tbrand" placeholder="brand">
+         <input type="number" id="Tyear" placeholder="year">
+         <input type="text" id="Tdescription" placeholder="description">
+    </div>
+
+    <button onclick="guardarInformacionTools()">Guardar Tools</button>
+
+    <!-- CLIENTES  -->
+    <h1> Clientes</h1>
+    <div id="resultado3"></div>
+    <button onclick="traerInformacionClientes()" > Consultar Clientes</button>
+
+    <div>
+         <input type="email" id="CLemail" placeholder="email">
+         <input type="password" id="CLpassword" placeholder="password">
+         <input type="text" id="CLname" placeholder="name">
+         <input type="number" id="CLage" placeholder="age">
+    </div>
+    <button onclick="guardarInformacionClientes()">Guardar Clientes</button>
+
+    <!-- MENSAJES  -->
+    <h1> MENSAJES</h1>
+    <div id="resultado5"></div>
+    <button onclick="traerInformacionMensajes()" > Consultar Mensajes </button>
+
+    <div>
+         <input type="text" id="messageText" placeholder="messageText">
+         
+         
+    </div>
+    <button onclick="guardarInformacionMensajes()">Guardar Mensajes</button>
+    
+    <!-- RESERVACIONES  -->
+    <h1> Reservaciones</h1>
+    <div id="resultado4"></div>
+    <button onclick="traerInformacionReservaciones()" > Consultar Reservaciones </button>
+
+    <div>
+         <input type="date" id="RstartDate" placeholder="startDate">
+         <input type="date" id="RdevolutionDate" placeholder="devolutionDate">
+         
+    </div>
+    <button onclick="guardarInformacionReservaciones()">Guardar Reservacion</button>
+
+    
+</body>
+</html>
