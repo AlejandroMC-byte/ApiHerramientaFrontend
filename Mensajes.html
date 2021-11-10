@@ -5,13 +5,15 @@
 <meta charset="utf-8">
 <meta name="description" content="Este es un documento HTML5">
 <meta name="keywords" content="HTML, CSS, JavaScript">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <link rel="stylesheet" href="misestilos.css">
+<script type="text/javascript" src="js/misFuncionesMensajes.js"></script>  
 </head>
 
 <body>
     <header id="cabeceralogo">
     <div>
-    <h1>Tutoria Domingo Front </h1>
+    <h1>Mensajes </h1>
     </div>
     </header>
     <nav id="menuprincipal">
@@ -27,5 +29,20 @@
     </ul>
     </div>
     </nav>
+
+    <div id="resultadoMensajes"></div>
+    <script type="text/javascript"> 
+    window.onload = autoInicioMensajes();
+    </script>
+    <input type="text" id="messagetext" placeholder="mensaje">
+    <button onclick="guardarInformacionMensajes()">Guardar Mensajes</button>
+    <select id="select-client"></select>
+    <script type="text/javascript">
+        window.onload = autoInicioRelacionCliente();
+    </script>
+        <select id="select-Tool"></select>
+        <script type="text/javascript">
+            window.onload = autoInicioSkate();
+        </script>
 </body>
 </html>
