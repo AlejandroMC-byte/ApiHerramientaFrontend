@@ -3,7 +3,7 @@
 function autoInicioCliente(){
     console.log("se esta ejecutando")
     $.ajax({
-        url:"http://168.138.247.22:80/api/Client/all",
+        url:"http://129.151.102.51:8080/api/Client/all",
         type:"GET",
         datatype:"JSON",
         success:function(respuesta){
@@ -49,7 +49,7 @@ function guardarInformacionCliente(){
         dataType: 'JSON',
         data: JSON.stringify(var2),
         
-        url:"http://168.138.247.22:80/api/Client/save",
+        url:"http://129.151.102.51:8080/api/Client/save",
        
         
         success:function(response) {
@@ -83,7 +83,7 @@ function actualizarInformacionCliente(idElemento){
     console.log(myData);
     let dataToSend=JSON.stringify(myData);
     $.ajax({
-        url:"http://168.138.247.22:80/api/Client/update",
+        url:"http://129.151.102.51:8080/api/Client/update",
         type:"PUT",
         data:dataToSend,
         contentType:"application/JSON",
@@ -109,7 +109,7 @@ function borrarCliente(idElemento){
     let dataToSend=JSON.stringify(myData);
     console.log(dataToSend);
     $.ajax({
-        url:"http://168.138.247.22:80/api/Client/"+idElemento,
+        url:"http://129.151.102.51:8080/api/Client/"+idElemento,
         type:"DELETE",
         data:dataToSend,
         contentType:"application/JSON",

@@ -1,7 +1,7 @@
 function autoInicioCategoria(){
     console.log("se esta ejecutando")
     $.ajax({
-        url:"http://168.138.247.22:80/api/Category/all",
+        url:"http://129.151.102.51:8080/api/Category/all",
         type:"GET",
         datatype:"JSON",
         success:function(respuesta){
@@ -18,7 +18,7 @@ function autoInicioCategoria(){
 //Manejador GET
 function traerInformacionSkate() {
     $.ajax({
-        url:"http://168.138.247.22:80/api/Tool/all",
+        url:"http://129.151.102.51:8080/api/Tool/all",
         //url: "http://localhost:8080/api/Tool/all",
         type: "GET",
         datatype: "JSON",
@@ -61,7 +61,7 @@ function pintarRespuestaSkate(response){
 function cargarDatosSkate(id) {
     $.ajax({
         dataType: 'json',
-        url:"http://168.138.247.22:80/api/Tool/"+id,
+        url:"http://129.151.102.51:8080/api/Tool/"+id,
         //url: "http://localhost:8080/api/Tool/" + id,
         type: 'GET',
 
@@ -103,7 +103,7 @@ function agregarSkate() {
             $.ajax({
                 type: "POST",
                 contentType: "application/json",
-                url:"http://168.138.247.22:80/api/Tool/save",
+                url:"http://129.151.102.51:8080/api/Tool/save",
                 //url: "http://localhost:8080/api/Tool/save",
                 data: dataToSend,
                 datatype: 'json',
@@ -141,7 +141,7 @@ console.log(dataToSend);
         {
             dataType: 'json',
             data: dataToSend,
-            url:"http://168.138.247.22:80/api/Tool/"+idElemento,
+            url:"http://129.151.102.51:8080/api/Tool/"+idElemento,
             //url: "http://localhost:8080/api/Tool/" + idElemento,
             type: 'DELETE',
             contentType: "application/JSON",
@@ -180,7 +180,7 @@ function actualizar(idElemento) {
             datatype: 'json',
             data: dataToSend,
             contentType: "application/JSON",
-            url:"http://168.138.247.22:80/api/Tool/update",
+            url:"http://129.151.102.51:8080/api/Tool/update",
             //url: "http://localhost:8080/api/Tool/update",
             type: "PUT",
 
